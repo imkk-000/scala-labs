@@ -1,8 +1,10 @@
 package org.scalalabs.basic.lab02
+
 /**
  * This Lab contains exercises where the usage of
  * higher order collection methods can be rehearsed.
  */
+
 import sys._
 
 object CollectionExercise01 {
@@ -33,9 +35,14 @@ object CollectionExercise01 {
    *
    */
   def googleCodeJamGooglerese(lines: String*): Seq[String] = {
-    error("fix me")
+    val input = "ejp mysljylc kd kxveddknmc re jsicpdrysi rbcpc ypc rtcsra dkh wyfrepkym veddknkmkrkcd de kr kd eoya kw aej tysr re ujdr lkgc jv zq"
+    val output = "our language is impossible to understand there are twenty six factorial possibilities so it is okay if you want to just give up qz"
+    val mapping = input.zip(output).toMap
+
+    lines.map(line => line.map(mapping(_)))
   }
 }
+
 /*========================================================== */
 
 object CollectionExercise02 {
@@ -68,6 +75,7 @@ object CollectionExercise03 {
     error("fix me")
 
 }
+
 /*========================================================== */
 
 object CollectionExercise04 {
